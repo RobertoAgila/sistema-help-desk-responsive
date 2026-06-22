@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Help Desk Data Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="brand">
+                <div class="brand-icon" aria-hidden="true">🛡️</div>
+                <div>
+                    <h1>Sistema Help Desk</h1>
+                    <p>Panel central para el control, seguimiento y atención de incidentes del Data Center.</p>
+                </div>
+            </div>
+            <span class="status-pill"><span class="status-dot"></span> Servicio operativo</span>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+            <li><a class="nav-link active" href="index.html">Dashboard</a></li>
+            <li><a class="nav-link" href="reportar.html">Reportar incidente</a></li>
+            <li><a class="nav-link" href="tickets.html">Tickets registrados</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="page-title">
+            <h2>Resumen del sistema</h2>
+            <p>Vista general de los incidentes, técnicos disponibles y estado de atención.</p>
+        </section>
+
+        <section class="stats-grid" aria-label="Indicadores rápidos">
+            <article class="stat-card">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Tickets abiertos</span>
+            </article>
+            <article class="stat-card">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Técnicos activos</span>
+            </article>
+            <article class="stat-card">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Incidentes críticos</span>
+            </article>
+            <article class="stat-card">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Disponibilidad</span>
+            </article>
+        </section>
+
+        <section class="dashboard-grid">
+            <article class="card">
+                <h3>Estado actual del Data Center</h3>
+                <p>El sistema permite reportar fallos de hardware, software o red. Los incidentes se registran, clasifican por prioridad y se asignan a los técnicos responsables para su solución oportuna.</p>
+                <p>El diseño responsive facilita que el personal pueda revisar la información desde computadores de escritorio, tablets o teléfonos móviles.</p>
+                <a class="btn btn-primary" href="reportar.html">Registrar nuevo ticket</a>
+            </article>
+
+            <aside class="card card-muted">
+                <h3>Flujo de atención</h3>
+                <ul class="workflow-list">
+                    <li><strong>1. Registro:</strong> el usuario reporta el incidente.</li>
+                    <li><strong>2. Priorización:</strong> se clasifica por impacto.</li>
+                    <li><strong>3. Asignación:</strong> un técnico recibe la alerta.</li>
+                    <li><strong>4. Cierre:</strong> se documenta la solución.</li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Estudio de Desarrollo - Departamento de TI.</p>
+        <p>Actividad #6 - Diseño adaptable</p>
+    </footer>
+</body>
+</html>

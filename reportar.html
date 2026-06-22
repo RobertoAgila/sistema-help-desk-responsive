@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidente | Help Desk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="brand">
+                <div class="brand-icon" aria-hidden="true">📝</div>
+                <div>
+                    <h1>Reportar incidente</h1>
+                    <p>Formulario adaptativo para registrar fallos del Data Center desde cualquier dispositivo.</p>
+                </div>
+            </div>
+            <span class="status-pill"><span class="status-dot"></span> Registro disponible</span>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Dashboard</a></li>
+            <li><a class="nav-link active" href="reportar.html">Reportar incidente</a></li>
+            <li><a class="nav-link" href="tickets.html">Tickets registrados</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="page-title">
+            <h2>Ingreso de incidentes</h2>
+            <p>Complete los datos principales del fallo para generar el ticket de atención.</p>
+        </section>
+
+        <section class="form-layout">
+            <aside class="help-panel">
+                <div class="alert">
+                    Para una atención más rápida, describa el equipo afectado, ubicación y momento aproximado del fallo.
+                </div>
+                <div class="alert alert-warning">
+                    Use prioridad alta solo cuando el incidente afecte servicios críticos o usuarios múltiples.
+                </div>
+                <article class="card card-muted">
+                    <h3>Categorías disponibles</h3>
+                    <p><span class="badge badge-high">Hardware</span> Equipos físicos, servidores, discos o periféricos.</p>
+                    <p><span class="badge badge-medium">Software</span> Sistemas, aplicaciones, bases de datos o accesos.</p>
+                    <p><span class="badge badge-low">Red</span> Switches, enlaces, conectividad, pérdida de paquetes.</p>
+                </article>
+            </aside>
+
+            <article class="card">
+                <h3>Formulario de registro</h3>
+                <form action="#" method="post" class="form-grid">
+                    <div class="form-group full">
+                        <label for="titulo">Título del incidente</label>
+                        <input class="input" type="text" id="titulo" name="titulo" placeholder="Ej. Falla en el switch principal" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="categoria">Categoría del problema</label>
+                        <select class="select" id="categoria" name="categoria" required>
+                            <option value="">Seleccione una opción...</option>
+                            <option value="Red">Red</option>
+                            <option value="Hardware">Hardware</option>
+                            <option value="Software">Software</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="form-label">Nivel de prioridad</span>
+                        <div class="radio-group">
+                            <label class="radio-option"><input type="radio" name="prioridad" value="Alta" required> Alta</label>
+                            <label class="radio-option"><input type="radio" name="prioridad" value="Media"> Media</label>
+                            <label class="radio-option"><input type="radio" name="prioridad" value="Baja"> Baja</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full">
+                        <label for="descripcion">Descripción detallada del fallo</label>
+                        <textarea class="textarea" id="descripcion" name="descripcion" placeholder="Escriba los detalles del incidente aquí..." required></textarea>
+                    </div>
+
+                    <div class="form-group full">
+                        <button class="btn btn-primary" type="submit">Registrar ticket</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Estudio de Desarrollo - Departamento de TI.</p>
+        <p>Actividad #6 - Diseño adaptable</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets Registrados | Help Desk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="brand">
+                <div class="brand-icon" aria-hidden="true">📊</div>
+                <div>
+                    <h1>Tickets registrados</h1>
+                    <p>Consulta responsiva del historial de incidentes reportados en el Data Center.</p>
+                </div>
+            </div>
+            <span class="status-pill"><span class="status-dot"></span> Monitoreo activo</span>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Dashboard</a></li>
+            <li><a class="nav-link" href="reportar.html">Reportar incidente</a></li>
+            <li><a class="nav-link active" href="tickets.html">Tickets registrados</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="page-title">
+            <h2>Historial de incidentes</h2>
+            <p>La tabla se adapta a móvil transformando cada fila en tarjeta informativa.</p>
+        </section>
+
+        <section class="card table-card">
+            <div class="table-header">
+                <div>
+                    <h3>Tickets actuales</h3>
+                    <p>Listado de incidentes clasificados por categoría, prioridad y estado.</p>
+                </div>
+                <a class="btn btn-secondary" href="reportar.html">Nuevo ticket</a>
+            </div>
+
+            <div class="table-responsive">
+                <table class="tickets-table">
+                    <thead>
+                        <tr>
+                            <th>ID Ticket</th>
+                            <th>Título</th>
+                            <th>Categoría</th>
+                            <th>Prioridad</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="ID Ticket" class="ticket-id">001</td>
+                            <td data-label="Título">Caída de servidor principal</td>
+                            <td data-label="Categoría">Hardware</td>
+                            <td data-label="Prioridad"><span class="badge badge-high">Alta</span></td>
+                            <td data-label="Estado"><span class="badge badge-repair">En reparación</span></td>
+                        </tr>
+                        <tr>
+                            <td data-label="ID Ticket" class="ticket-id">002</td>
+                            <td data-label="Título">Lentitud en base de datos</td>
+                            <td data-label="Categoría">Software</td>
+                            <td data-label="Prioridad"><span class="badge badge-medium">Media</span></td>
+                            <td data-label="Estado"><span class="badge badge-open">Abierto</span></td>
+                        </tr>
+                        <tr>
+                            <td data-label="ID Ticket" class="ticket-id">003</td>
+                            <td data-label="Título">Pérdida de paquetes en switch</td>
+                            <td data-label="Categoría">Red</td>
+                            <td data-label="Prioridad"><span class="badge badge-high">Alta</span></td>
+                            <td data-label="Estado"><span class="badge badge-closed">Cerrado</span></td>
+                        </tr>
+                        <tr>
+                            <td data-label="ID Ticket" class="ticket-id">004</td>
+                            <td data-label="Título">Actualización pendiente del antivirus</td>
+                            <td data-label="Categoría">Software</td>
+                            <td data-label="Prioridad"><span class="badge badge-low">Baja</span></td>
+                            <td data-label="Estado"><span class="badge badge-open">Abierto</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Estudio de Desarrollo - Departamento de TI.</p>
+        <p>Actividad #6 - Diseño adaptable</p>
+    </footer>
+</body>
+</html>
