@@ -18,21 +18,6 @@ Este proyecto integra el UI Kit del sistema Help Desk en tres páginas estructur
 - Tabla responsive que se transforma en tarjetas en pantallas menores a 768px.
 - Metaetiqueta viewport incluida en los tres HTML.
 
-## Rama de GitHub solicitada
-```bash
-git checkout develop
-git pull origin develop
-git checkout -b feature/responsive-layout
-git add index.html reportar.html tickets.html style.css README.md
-git commit -m "Implementar layout responsive del Help Desk"
-git push -u origin feature/responsive-layout
-```
+## Resultado
 
-Luego crear el Pull Request desde `feature/responsive-layout` hacia `develop`.
-
-## Pruebas sugeridas
-1. Abrir `index.html` en el navegador.
-2. Presionar F12 y activar la vista responsive.
-3. Probar escritorio, tablet y móvil.
-4. Revisar que el menú se apile verticalmente en móvil.
-5. Verificar que el formulario y la tabla ocupen el 100% del ancho disponible sin desbordamiento horizontal.
+El diseño permite una visualización adaptable en diferentes tamaños de pantalla, manteniendo una estructura clara, ordenada y funcional para el sistema de gestión de incidentes.
